@@ -11,14 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 //Primeiro Cria a Rota e Vai para TestController
 Route::get('ola/{nome}', "TestController@index");
 
 Route::get('notas', "TestController@notas");
 
-Route::get('posts', "PostController@index");
+Route::get('/', "PostController@index");
